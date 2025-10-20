@@ -322,7 +322,7 @@
                 this.vx = this.randBetween(-3, 3);
                 this.vy = this.randBetween(2, 5);
                 this.radius = this.randBetween(1, 4);
-                this.alpha = this.randBetween(0.1, 0.9);
+                this.alpha = this.randBetween(0.2, 0.9);
             }
             randBetween(min, max) {
                 return min + Math.random() * (max - min);
@@ -378,7 +378,7 @@
         new Snow();
         ////////////////////////////////////////////////////////////
         // Simple CountDown Clock
-        const comingdate = new Date("Jan 01, 2026 00:00:00");
+        const comingdate = new Date("Jan 1, 2026 00:00:00");
         const d = document.getElementById("d");
         const h = document.getElementById("h");
         const m = document.getElementById("m");
@@ -400,7 +400,7 @@
             colors = ["#ff6651", "#42a5f5", "#66bb6a", "#ab47bc", "#ffa726", "#ec407a", "#26c6da", "#78909c", "#ffca28", "#5c6bc0", "#8d6e63", "#26a69a"];
         jQuery(document).ready((function(a) {
             a("body").click((function(o) {
-                var t = new Array("Năm mới vui vẻ", "Cung hỉ phát tài", "Tiền vô như nước", "Vợ đẹp con ngoan", "Tài lộc vào nhà", "Phúc thọ vô biên", "Sống khoẻ đón xuân", "Phú quý cát tường", "Đắc lộc toàn gia", "Hạnh phúc mênh mang", "Vạn sự thành công", "Mã đáo thành công", "Tiền vô tỷ tỷ", "Tài vạn công danh", "Hạnh phúc gia an", "Sức khoẻ như voi", "Thông minh vượt trội", "Phúc lộc trong tay", "Gia chủ phát tài", "Vạn sự như ý", "Túi tiền nặng ký ", "Làm ăn phát đạt", "Vàng bạc cao sang", "Sức khỏe an nhàn", "Công danh hết ý", "Cung hỷ cung hỷ", "Hạnh phúc triền miên", "Sung sướng như tiên"),
+                var t = new Array("Happy New Year", "Congratulations and prosperity", "Money flows in like water", "Beautiful wife, good children", "Wealth enters the home", "Boundless blessings and longevity", "Healthy living to welcome spring", "Wealth and good fortune", "Good luck for the whole family", "Endless happiness", "Success in everything", "Wishing you great success", "Money flows in by the billions", "Wealth and fame in abundance", "Peace and happiness for the family", "Health as strong as an elephant", "Outstanding intelligence", "Blessings and fortune in your hands", "May the homeowner prosper", "Everything goes as you wish", "Heavy pockets full of cash", "Business prospers greatly", "Gold and silver in abundance", "Healthy and carefree life", "Perfect career success", "Congratulations, congratulations", "Everlasting happiness", "Bliss like living in heaven"),
                     c = a("<span style='font-family:sans-serif;'>").text(t[xyz_]),
                     n = colors[Math.floor(Math.random() * colors.length)];
                 xyz_ = (xyz_ + 1) % t.length;
